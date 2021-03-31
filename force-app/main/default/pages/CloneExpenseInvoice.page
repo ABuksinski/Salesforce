@@ -1,0 +1,15 @@
+<apex:page controller="CloneInvoiceController" sidebar="false">
+
+<apex:form >
+    <apex:pageblock >
+        <apex:pageblockSection >
+            <apex:pageblockSectionItem >Enter the Invoice Number:</apex:pageblockSectionItem>
+            <apex:pageblockSectionItem ><apex:inputtext value="{!idOfRecord}"  /></apex:pageblockSectionItem>            
+        </apex:pageblockSection>
+        <apex:pageblockButtons >
+            <apex:commandButton value="Clone" action="{!cloneRecord}"/>
+        </apex:pageblockButtons>
+    </apex:pageblock>   
+</apex:form>
+
+</apex:page>

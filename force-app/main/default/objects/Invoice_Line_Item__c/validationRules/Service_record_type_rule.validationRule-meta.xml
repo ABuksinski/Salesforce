@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_record_type_rule</fullName>
+    <active>true</active>
+    <errorConditionFormula>Course_Invoice__r.RecordType.Name = &quot;Service Invoice&quot;
+ &amp;&amp; 
+ RecordType.Name  &lt;&gt; &quot;Service&quot;</errorConditionFormula>
+    <errorMessage>You can only use expense line items on the expense invoice.
+Please chose the service record type.</errorMessage>
+</ValidationRule>

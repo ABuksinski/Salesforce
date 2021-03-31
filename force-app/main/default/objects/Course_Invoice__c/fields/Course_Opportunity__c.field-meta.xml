@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Course_Opportunity__c</fullName>
+    <externalId>false</externalId>
+    <label>Course Opportunity</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Course_Opportunity__c.Instuctor__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Instructor__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Course_Opportunity__c</referenceTo>
+    <relationshipLabel>Course Invoices</relationshipLabel>
+    <relationshipName>Service_Invoices</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>
